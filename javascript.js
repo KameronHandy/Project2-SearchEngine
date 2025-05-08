@@ -5,7 +5,8 @@ async function  GetGiffy() {
     let SearchDataHolder= await SearchResponseHolder.data;
 
     let ImageHolder= document.getElementById("Images");
-    ImageHolder.innerHTML = "";
+    ImageHolder.innerHTML = ""
+    ;
 
 
     for (let index = 0; index < SearchDataHolder.length; index++){
