@@ -19,6 +19,17 @@ async function  GetGiffy() {
 
 
 
+async function  GetGiffyRandom() {
+    let GetUrl = await fetch(`https://api.giphy.com/v1/gifs/random?api_key=${KeyRandom}&tag=&rating=g`)
+    let SearchResponseHolder = await GetUrl.json();
+    let SearchDataHolder= await SearchResponseHolder.data;
+
+    let ImageHolder= document.getElementById("ImagesRandom");
+    ImageHolder.innerHTML = ""
+    ;
+}
+
+
 function addElements(){
     let newElement = document.createAttribute("img")
     newElement.src = SearchDataHolder [index].images.original.url;
@@ -39,4 +50,5 @@ GetGiffy();
 
 
 document.getElementById("GiffButton").addEventListener("click",GetGiffy)
+document.getElementById("Random").addEventListener("click",GetGiffyRandom)
 
