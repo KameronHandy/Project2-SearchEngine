@@ -25,8 +25,7 @@ async function  GetGiffyRandom() {
     let SearchDataHolder= await SearchResponseHolder.data;
 
     let ImageHolder= document.getElementById("ImagesRandom");
-    ImageHolder.innerHTML = ""
-    ;
+
 }
 
 
@@ -34,7 +33,7 @@ function addElements(){
     let newElement = document.createAttribute("img")
     newElement.src = SearchDataHolder [index].images.original.url;
     newElement.ClassName = "profileImage"
-    Document.getElementById("section_image").append(newElement)
+    document.getElementById("section_image").append(newElement)
 }
 
 function deleteElements () {
@@ -47,6 +46,7 @@ function deleteElements () {
 
 
 GetGiffy();
+GetGiffyRandom();
 
 
 document.getElementById("GiffButton").addEventListener("click",GetGiffy)
