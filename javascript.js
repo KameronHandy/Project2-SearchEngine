@@ -17,6 +17,24 @@ async function  GetGiffy() {
     }
 }
 
+
+
+function addElements(){
+    let newElement = document.createAttribute("img")
+    newElement.src = SearchDataHolder [index].images.original.url;
+    newElement.ClassName = "profileImage"
+    Document.getElementById("section_image").append(newElement)
+}
+
+function deleteElements () {
+    let arrElements = document.getElementsByTagName("img")
+    for (let index=0; index < arrElements.length; index++){
+        arrElements[index].replace()
+    }
+
+}
+
+
 GetGiffy();
 
 
