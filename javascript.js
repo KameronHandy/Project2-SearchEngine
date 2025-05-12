@@ -14,6 +14,10 @@ async function  GetGiffy() {
         image.src=SearchDataHolder[index].images.original.url;
         ImageHolder.append(image);
         console.log(SearchDataHolder[index].images.original.url);
+
+        
+
+        
     }
 }
 
@@ -21,25 +25,34 @@ async function  GetGiffy() {
 
 async function  GetGiffyRandom() {
     let GetUrl = await fetch(`https://api.giphy.com/v1/gifs/random?api_key=${KeyRandom}&tag=&rating=g`)
-    let SearchResponseHolder = await GetUrl.json();
-    let SearchDataHolder= await SearchResponseHolder.data;
+    let RandomResponseHolder = await GetUrl.json();
+    let RandomDataHolder= await RandomResponseHolder.data;
 
-    let ImageHolder= document.getElementById("ImagesRandom");
+    let RandomImageHolder= document.getElementById("RandomImages");
+
+    for (let index = 0; index < RandomDataHolder.length; index++){
+        let newElement = document.createElement("img");
+        newElement.src = RandomDataHolder [index].images.original.url;
+        newElement.ClassName = "profileImage";
+        document.getElementById("RandomImages").append(newElement);
+        console.log(RandomDataHolder[index].images.original.url);
+    }
 
 }
 
 
 function addElements(){
     let newElement = document.createAttribute("img")
-    newElement.src = SearchDataHolder [index].images.original.url;
+    newElement.src = RandomDataHolder [index].images.original.url;
     newElement.ClassName = "profileImage"
     document.getElementById("section_image").append(newElement)
+    console.log(RandomDataHolder[index].images.original.url);
 }
 
 function deleteElements () {
     let arrElements = document.getElementsByTagName("img")
     for (let index=0; index < arrElements.length; index++){
-        arrElements[index].replace()
+        arrElements[index].remove()
     }
 
 }
