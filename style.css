@@ -1,4 +1,10 @@
-.profileImage{
-    max-width: 500;
-    max-height: 500;
+#profileImage{
+    max-width: 50;
+    max-height: 50;
 }
+
+.imgAnimatedGif{
+
+    max-width: 120px;
+    max-height: 70px;
+  }
