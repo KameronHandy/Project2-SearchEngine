@@ -24,7 +24,7 @@ CSS
 
 BOOTSTRAP
 
-#linkedIn
+# linkedIn
 
 https://www.linkedin.com/in/kameron-handy-104ab268/ 
 
