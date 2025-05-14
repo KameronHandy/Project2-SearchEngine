@@ -14,3 +14,11 @@ As a User i want to be able to quickly access giphs so i can share them on socia
 
 # Future Improvements
 I would like to make the website more uniform. Including a random button that displays random Giphs if the user wants some inspiration. I would also like to make the website more interactive to keep the User continuosly interested in the Website for a longer period of time.
+
+# Technologies Used
+HTML
+JAVASCRIPT
+CSS
+BOOTSTRAP
+
+
