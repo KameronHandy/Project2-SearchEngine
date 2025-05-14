@@ -17,8 +17,14 @@ I would like to make the website more uniform. Including a random button that di
 
 # Technologies Used
 HTML
+
 JAVASCRIPT
+
 CSS
+
 BOOTSTRAP
 
+#linkedIn
+
+https://www.linkedin.com/in/kameron-handy-104ab268/ 
 
